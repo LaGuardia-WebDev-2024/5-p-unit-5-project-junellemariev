@@ -1,15 +1,15 @@
 <!-- Unit 5 Project
 Requirements
-[  ] <div> and <span>
-[  ] border:, margin:, and padding: 
-[  ] Three Images
+[ yes ] <div> and <span>
+[ yes ] border:, margin:, and padding: 
+[ yes ] Three Images
 
 Select TWO Additional Features to Add  
 [ no ] Feature 1 - Flexbox
 [ yes ] Feature 2 - Flip Card
 [ no ] Feature 3 - Animation
 [ no ] Feature 4 - Linear Gradient
-[ no ] Feature 5 - Use a .Gif
+[ yes ] Feature 5 - Use a .Gif
 [ no ] Feature 6 - Unique Border Styles
 -->
 
@@ -24,6 +24,7 @@ Select TWO Additional Features to Add
 
 body {
   background-color:  rgb(255, 224, 224);
+  align-items: center;
 }
 
 .flip-card {
@@ -79,10 +80,18 @@ border: 5px solid salmon;
 padding: 5px;
 }
 
+.container {
+  display:grid;
+  justify-content: center; /* Centers horizontally along the main axis */
+  align-items: center;     /* Centers vertically along the cross axis */
+  height: 100vh;           /* Sets the container height to the full viewport height */
+  width: 100%;             /* Ensures it spans the full width */
+}
+
   </style>
 </head>
 <body>
-
+<div class="container">
 
 
 <img src="13-135768_thank-you-to-bafta-la-for-inviting-us-to-black-design-no-removebg-preview.png" alt="Thank You To Bafta/la For Inviting Us To - Black Design No Background@clipartmax.com">
@@ -110,9 +119,20 @@ padding: 5px;
 
 <br><br><br><br>
 
+<div class="photos">
 <img src="https://i.pinimg.com/236x/db/bd/b6/dbbdb699f461b9ab54777d2219ab5031.jpg" alt="tea set">
+</div>
 
+<br><br><br><br>
 
+<div class="photos">
+<img src="https://annabanana.co/wp-content/uploads/2020/07/Strawberry-Crepe-Cake-4.jpg" alt="crepe cake">
+</div>
 
+<br><br><br><br>
+
+<img src="https://media.tenor.com/M-9qaW4J3MoAAAAM/hello-kitty-see-you-there.gif" alt="see you there" style="width:500px">
+
+</div>
 </body>
 </html>
