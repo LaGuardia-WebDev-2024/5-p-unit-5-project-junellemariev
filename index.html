@@ -88,6 +88,14 @@ padding: 5px;
   width: 100%;             /* Ensures it spans the full width */
 }
 
+#greeting {
+   background: linear-gradient(to right, #fd2c7c, #ff8af9);
+   -webkit-background-clip: text;
+  background-clip: text;
+   -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
   </style>
 </head>
 <body>
@@ -103,8 +111,10 @@ padding: 5px;
     </div>
     <div class="flip-card-back">
       <h1>Junelle's Tea Party</h1>
-      <p>00/50/7777</p>
-      <p>1234 Persimmons Lane</p>
+      <p>00/50/7777 <br>
+        1234 Persimmons Lane <br>
+       <span id="greeting"> Looking forward to seeing you there!</span></p>
+
     </div>
   </div>
 </div>
